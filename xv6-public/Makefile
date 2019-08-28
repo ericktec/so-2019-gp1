@@ -175,6 +175,7 @@ UPROGS=\
 	_ln\
 	_ls\
 	_mkdir\
+    _reboot\
 	_rm\
 	_sh\
     _shutdown\
