@@ -20,7 +20,7 @@ main(void)
   dup(0);  // stderr
 
   for(;;){
-    printf(1, "init: starting sh\n");
+    printf(1, "Bienvenido \n");
     pid = fork();
     if(pid < 0){
       printf(1, "init: fork failed\n");
@@ -28,6 +28,8 @@ main(void)
     }
     if(pid == 0){
       exec("sh", argv);
+      //Cambio de aaa y cambio a ls se hace un loop infinito el primero con error porque no existe el programa
+      //el segundo ejecuta el programa ls sin parar.
       printf(1, "init: exec sh failed\n");
       exit();
     }
