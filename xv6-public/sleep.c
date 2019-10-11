@@ -12,15 +12,13 @@ main(int argc, char **argv)
     exit();
   }
   for(i=1; i<argc; i++){
-      if(atoi(argv[i])==1){
-        printf(1,"No puedes matar a kill\n");
-    }
-    else{
-        kill(atoi(argv[i]));
+        sleep(atoi(argv[i])*100);
 
-    }
   }
   exit();
+
+
+
 
 
 }
