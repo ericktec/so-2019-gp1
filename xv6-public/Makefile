@@ -179,7 +179,7 @@ UPROGS=\
 	_rm\
 	_sh\
     _shutdown\
-	_sleep\
+
 	_stressfs\
 	_usertests\
 	_wc\
